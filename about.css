@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    display: flex;
+    background-color: #1a0e07; /* Lebih gelap, lebih kontras */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Sidebar kiri */
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background-color: #111;
+    padding: 30px 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar .judul {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #fff;
+    display: flex;
+    font-weight: bold;
+}
+
+.icon a {
+    text-decoration: none;
+}
+
+
+.icon a i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    border: 0.2rem solid #ffc107;
+    color: #ffc107;
+    border-radius: 50%;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+    transition: .4s ease-in-out;
+    animation: slideright 2s ease forwards;
+    animation-delay: calc(.5s*var(--u));
+}
+
+.icon a i:hover {
+    transition: .4s ease-in-out;
+    background-color: #ffc107;
+    color: white;
+    box-shadow: 0 0 10px #ffc107;
+}
+
+.sidebar .icon {
+    margin-top: auto;
+    display: flex;
+}
+
+.nama1 {
+    color: #ffc107;
+}
+
+.nama2 {
+    color: white;
+    margin-left: 4px;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.menu li {
+    margin-bottom: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu a.aktif,
+.menu a:hover {
+    background-color: #ffc107;
+    color: #111;
+    font-weight: 600;
+}
+
+    main {
+      margin-left: 240px;
+      padding: 40px;
+    }
+
+    .about-container {
+      max-width: 900px;
+      background-color: #2e1a0c;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .about-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ffd55a;
+    }
+
+    .about-container h2 {
+      margin-top: 30px;
+      color: #f0c674;
+    }
+
+    .about-container p,
+    .about-container ul {
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #f5f5f5;
+    }
+
+    .map-container {
+      margin-top: 30px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
